@@ -1,3 +1,6 @@
+# Exclude README.md (creating new one on GitHub)
+README.md
+
 # Python
 __pycache__/
 *.py[cod]
