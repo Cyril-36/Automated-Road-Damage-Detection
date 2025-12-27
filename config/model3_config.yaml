@@ -1,0 +1,56 @@
+# YOLOv8s @ 1024x1024 Configuration
+# Model 3 of the ensemble system (high resolution)
+
+# Model
+model: yolov8s.pt  # Pretrained weights
+
+# Training parameters
+epochs: 100
+batch_size: 8  # Smaller batch due to higher resolution
+img_size: 1024
+learning_rate: 0.01
+lr_final: 0.01
+optimizer: SGD
+momentum: 0.937
+weight_decay: 0.0005
+
+# Warmup
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+
+# Loss weights
+box_loss: 7.5
+cls_loss: 0.5
+dfl_loss: 1.5
+
+# Data augmentation
+augmentation:
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  degrees: 0.0
+  translate: 0.1
+  scale: 0.5
+  shear: 0.0
+  perspective: 0.0
+  flipud: 0.0
+  fliplr: 0.5
+  mosaic: 1.0
+  mixup: 0.0
+  copy_paste: 0.0
+
+# Training settings
+patience: 20
+save_period: 10
+close_mosaic: 10
+cache: true
+amp: true
+
+# Hardware
+device: 0
+workers: 8
+
+# Validation
+val: true
+plots: true

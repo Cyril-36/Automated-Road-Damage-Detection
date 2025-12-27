@@ -1,0 +1,42 @@
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# YOLOv8
+ultralytics>=8.0.0
+
+# Computer Vision
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Ensemble Methods
+ensemble-boxes>=1.0.9
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# Web Framework
+Flask>=2.3.0
+Flask-CORS>=4.0.0
+gradio>=3.50.0
+
+# Utilities
+tqdm>=4.65.0
+PyYAML>=6.0
+python-dotenv>=1.0.0
+
+# Image Processing
+albumentations>=1.3.0
+scikit-image>=0.21.0
+
+# Metrics
+scikit-learn>=1.3.0
+
+# API
+requests>=2.31.0

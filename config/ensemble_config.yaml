@@ -1,0 +1,50 @@
+# Ensemble Configuration
+# Multi-resolution YOLOv8 ensemble with Weighted Boxes Fusion
+
+# Model paths
+models:
+  - path: models/yolov8n_640.pt
+    name: YOLOv8n@640
+    input_size: 640
+    weight: 1.0
+
+  - path: models/yolov8s_640.pt
+    name: YOLOv8s@640
+    input_size: 640
+    weight: 1.5
+
+  - path: models/yolov8s_1024.pt
+    name: YOLOv8s@1024
+    input_size: 1024
+    weight: 2.0
+
+# Weighted Boxes Fusion parameters
+wbf:
+  iou_threshold: 0.5
+  skip_box_threshold: 0.01
+  conf_type: avg  # avg, max, or min
+
+# Inference modes
+modes:
+  fast:
+    models: [0]  # Only model 1
+    conf_threshold: 0.25
+
+  balanced:
+    models: [0, 1]  # Models 1 and 2
+    conf_threshold: 0.25
+
+  accurate:
+    models: [0, 1, 2]  # All models
+    conf_threshold: 0.25
+
+# Classes
+classes:
+  0: Longitudinal Crack
+  1: Transverse Crack
+  2: Alligator Crack
+  3: Pothole
+  4: Other Corruption
+
+# Device
+device: cuda  # cuda or cpu

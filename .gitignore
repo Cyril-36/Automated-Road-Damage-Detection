@@ -1,0 +1,118 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Model weights (too large for GitHub)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.h5
+*.pb
+models/*.pt
+models/*.pth
+weights/
+*.weights
+
+# Dataset (too large for GitHub)
+Dataset/
+data/RDD2022/
+data/train/
+data/test/
+data/val/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+!data/sample_images/*.jpg
+!data/sample_images/*.png
+!docs/images/*.png
+!docs/images/*.jpg
+!results/figures/*.png
+!results/figures/*.jpg
+
+# Training outputs
+runs/
+wandb/
+checkpoints/
+RDD2022_Results/
+RDD2022_Evaluation_Results/
+RDD2022_TTA_Ensemble_Results/
+
+# Results (optional - you might want to keep some)
+# results/predictions/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Distribution / packaging
+*.egg
+*.whl

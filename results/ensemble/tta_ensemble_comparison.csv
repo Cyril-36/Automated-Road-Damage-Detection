@@ -1,0 +1,5 @@
+Method,mAP@50,mAP@50-95
+YOLOv8n @ 640 (Baseline),0.6001,0.3202
+YOLOv8s @ 640 (Baseline),0.6343,0.3422
+YOLOv8s @ 1024 (Baseline),0.6368,0.3353
+Ensemble (All 3 Models),0.0,0.0
