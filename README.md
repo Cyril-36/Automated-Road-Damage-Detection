@@ -13,7 +13,7 @@
 
 ---
 
-## 📋 Overview
+## ℹ️ Overview
 
 This project implements a cutting-edge **multi-resolution YOLOv8 ensemble system** for automated road damage detection. By leveraging multiple YOLOv8 models trained at different resolutions and fused using **Weighted Boxes Fusion (WBF)**, the system achieves state-of-the-art performance on the RDD2022 dataset with an **ensemble mAP@50 of 66.18%**.
 
@@ -21,7 +21,7 @@ The system is designed for real-world deployment in infrastructure monitoring, a
 
 ---
 
-## ✨ Features
+## ⚡ Features
 
 - **Multi-Resolution Ensemble Architecture**: Combines YOLOv8 models at different input resolutions for optimal accuracy
   - YOLOv8n @ 640×640: Real-time inference (~15ms)
@@ -66,7 +66,7 @@ The system is designed for real-world deployment in infrastructure monitoring, a
 
 ---
 
-## 🚀 Installation
+## 📦 Installation
 
 ### Prerequisites
 
@@ -195,7 +195,7 @@ Automated-Road-Damage-Detection/
 
 ---
 
-## 📖 Dataset Setup
+## 📥 Dataset Setup
 
 This project uses the **RDD2022 Road Damage Detection 2022** dataset.
 
@@ -214,7 +214,7 @@ cp -r /path/to/RDD2022/test/labels data/RDD2022/test/
 
 ---
 
-## 🔧 Training a Model
+## 🔧 Training
 
 ```bash
 python scripts/train.py --config config/model_config.yaml
@@ -367,7 +367,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🚀 Roadmap
+## ✨ Roadmap
 
 - [ ] Add real-time video stream processing
 - [ ] Implement MLOps pipeline (DVC, CML)
