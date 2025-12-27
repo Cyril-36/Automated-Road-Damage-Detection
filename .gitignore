@@ -98,6 +98,9 @@ logs/
 
 # Temporary files
 *.tmp
+
+# README (will be created on GitHub)
+README.md
 *.temp
 *.swp
 *.swo
