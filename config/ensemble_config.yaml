@@ -3,17 +3,17 @@
 
 # Model paths
 models:
-  - path: models/yolov8n_640.pt
+  - path: models/yolov8n_640_best.pt
     name: YOLOv8n@640
     input_size: 640
     weight: 1.0
 
-  - path: models/yolov8s_640.pt
+  - path: models/yolov8s_640_best.pt
     name: YOLOv8s@640
     input_size: 640
     weight: 1.5
 
-  - path: models/yolov8s_1024.pt
+  - path: models/yolov8s_1024_best.pt
     name: YOLOv8s@1024
     input_size: 1024
     weight: 2.0
